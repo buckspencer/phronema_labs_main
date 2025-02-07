@@ -1,13 +1,12 @@
-import { useId } from 'react'
-import Link from 'next/link'
-
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
+import Link from 'next/link'
 import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
+import { useId } from 'react'
 
 function TextInput({ label, ...props }) {
   let id = useId()
@@ -47,17 +46,24 @@ function RadioInput({ label, ...props }) {
 function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value={process.env.NEXT_PUBLIC_WEB_3_FORMS}
+        />
+
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
+          <TextInput label="Name" name="name" autoComplete="name" required />
           <TextInput
             label="Email"
             type="email"
             name="email"
             autoComplete="email"
+            required
           />
           <TextInput
             label="Company"
@@ -65,7 +71,8 @@ function ContactForm() {
             autoComplete="organization"
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
+          <TextInput label="Message" name="message" required />
+
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Budget</legend>
@@ -78,6 +85,14 @@ function ContactForm() {
             </fieldset>
           </div>
         </div>
+
+        <input
+          type="checkbox"
+          name="botcheck"
+          className="hidden"
+          style={{ display: 'none' }}
+        />
+
         <Button type="submit" className="mt-10">
           Let’s work together
         </Button>
@@ -90,24 +105,20 @@ function ContactDetails() {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
+        This operation is currently conducted out of
       </h2>
-      <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
-      </p>
+      {/* <p className="mt-6 text-base text-neutral-600">
+        In the Tucson area? Reach out
+      </p> */}
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
-      <Border className="mt-16 pt-16">
+      {/* <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Email us
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
-          ].map(([label, email]) => (
+          {[['Info', 'indexed.hash.array@gmail.com']].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
               <dd>
@@ -121,14 +132,14 @@ function ContactDetails() {
             </div>
           ))}
         </dl>
-      </Border>
+      </Border> */}
 
-      <Border className="mt-16 pt-16">
+      {/* <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Follow us
         </h2>
         <SocialMedia className="mt-6" />
-      </Border>
+      </Border> */}
     </FadeIn>
   )
 }

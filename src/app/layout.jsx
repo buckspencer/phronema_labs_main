@@ -1,11 +1,11 @@
-import { RootLayout } from '@/components/RootLayout'
-
 import '@/styles/tailwind.css'
+
+import { RootLayout } from '@/components/RootLayout'
 
 export const metadata = {
   title: {
-    template: '%s - Studio',
-    default: 'Studio - Award winning developer studio based in Denmark',
+    template: '%s - Phronema Labs',
+    default: 'Phronema Labs - Subscription Consulting and Design',
   },
 }
 

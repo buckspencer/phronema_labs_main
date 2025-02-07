@@ -123,9 +123,9 @@ export function Footer() {
           <Link href="/" aria-label="Home">
             <Logo className="h-8" fillOnHover />
           </Link>
-          <p className="text-sm text-neutral-700">
+          {/* <p className="text-sm text-neutral-700">
             © Studio Agency Inc. {new Date().getFullYear()}
-          </p>
+          </p> */}
         </div>
       </FadeIn>
     </Container>

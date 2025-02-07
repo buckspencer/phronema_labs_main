@@ -59,7 +59,7 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logo className="hidden sm:block" />
+          <Logo isDark={invert} className="hidden sm:block" />
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
@@ -200,7 +200,7 @@ function RootLayoutInner({ children }) {
                 }}
               />
             </div>
-            <Navigation />
+            {/* <Navigation /> */}
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:grid-cols-2 sm:pt-16">
@@ -213,12 +213,12 @@ function RootLayoutInner({ children }) {
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
                   </div>
-                  <div className="sm:border-l sm:border-transparent sm:pl-16">
+                  {/* <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
                       Follow us
                     </h2>
                     <SocialMedia className="mt-6" invert />
-                  </div>
+                  </div> */}
                 </div>
               </Container>
             </div>
