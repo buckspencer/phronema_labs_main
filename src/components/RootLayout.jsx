@@ -14,11 +14,14 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
+import Image from 'next/image'
+// import { Image } from 'next/image'
 import Link from 'next/link'
 import { Logo } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 import clsx from 'clsx'
+import fractal from '../images/fractal_background.png'
 import { usePathname } from 'next/navigation'
 
 const RootLayoutContext = createContext(null)
@@ -235,12 +238,17 @@ function RootLayoutInner({ children }) {
           layout
           className="relative isolate flex w-full flex-col pt-9"
         >
-          <GridPattern
-            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
-            yOffset={-96}
-            interactive
-          />
-
+          <motion.div
+            whileHover={{
+              scale: 1.01, // Scale the image to 120% of its original size
+            }}
+            transition={{
+              duration: 0.9, // Duration for scaling effect in seconds
+            }}
+            className="absolute top-0 right-0 opacity-20"
+          >
+            <Image src={fractal} width={800} alt="Fractal Swirl" />
+          </motion.div>
           <main className="w-full flex-auto">{children}</main>
 
           <Footer />

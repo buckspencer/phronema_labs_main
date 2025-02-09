@@ -67,12 +67,10 @@ function Clients() {
                 key={offering}
                 className="border border-white p-2 transition-transform hover:scale-110"
               >
-                <FadeIn>
-                  {/* <Image src={logo} alt={client} unoptimized /> */}
-                  <h3 className="text-sm font-semibold tracking-wider text-white">
-                    * {offering}
-                  </h3>
-                </FadeIn>
+                {/* <Image src={logo} alt={client} unoptimized /> */}
+                <h3 className="text-sm font-semibold tracking-wider text-white">
+                  * {offering}
+                </h3>
               </li>
             ))}
           </ul>
@@ -143,12 +141,17 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        title="From Insight to Impact."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          We begin by diving deep into your goals and vision, gathering insights
+          that shape the foundation of the project. Through collaboration and
+          continuous refinement, we craft designs that not only meet your
+          expectations but elevate them, ensuring every detail works
+          harmoniously to bring your vision to life. Our process is rooted in
+          discovery, so that the final design isn&apos;t just a solution, but a
+          snapshot of a brand&apos;s journey.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -199,13 +202,13 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
+      <Container className="mt-42 pb-20 sm:pb-10 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-neutral-950 sm:text-7xl">
             In house design subscription service
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Rapid turnaround design, One rate, cancel anytime.
+            Rapid turnaround design. One rate, cancel anytime.
           </p>
         </FadeIn>
       </Container>
