@@ -31,41 +31,28 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
-const offerings = [
-  'Web design',
-  'Logos',
-  'Slide decks',
-  'Branding',
-  'Social media',
-  'UI/UX design',
-  'Webflow development',
-  'Mobile apps',
-  'Print design',
-  'Email',
-  'Display ads',
-  'Icons',
-  'Brand guides',
-]
+const offerings = ['Landing Pages', 'Logos', 'Bespoke Design']
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mx-auto mt-24 w-[50%] rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
-        <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-md text-center font-display font-semibold tracking-wider text-white sm:text-left">
+        <FadeIn className="mx-auto flex flex-col gap-x-8 text-center sm:flex-row sm:items-center sm:justify-center">
+          <h2 className="text-md font-display font-semibold tracking-wider text-white">
             We’ve got you covered.
           </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
+          <div className="h-px w-full bg-neutral-800 sm:w-auto sm:flex-auto" />
         </FadeIn>
+
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
           >
             {offerings.map((offering) => (
               <li
                 key={offering}
-                className="border border-white p-2 transition-transform hover:scale-110"
+                className="mx-auto border border-white p-2 transition-transform hover:scale-110"
               >
                 {/* <Image src={logo} alt={client} unoptimized /> */}
                 <h3 className="text-sm font-semibold tracking-wider text-white">
