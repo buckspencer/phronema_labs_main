@@ -10,11 +10,14 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium [text-wrap:balance] text-white sm:text-4xl">
-              Tell us about your project
+              Ready to bring your ideas to life?
             </h2>
+            <p className="mt-4 text-lg text-white/80">
+              Based in Tucson, Arizona, we&apos;re a creative development agency that helps businesses turn their digital visions into reality. Whether you need a new web tool, help getting a project off the ground, or a landing page for your business, we&apos;re here to help. Let&apos;s discuss how we can work together to achieve your goals.
+            </p>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
-                Say Hi
+                Let&apos;s Talk
               </Button>
             </div>
             <div className="mt-10 border-t border-white/10 pt-10">

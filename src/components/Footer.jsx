@@ -120,12 +120,25 @@ export function Footer() {
           </div>
         </div> */}
         <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
-          </Link>
-          {/* <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
-          </p> */}
+          <div className="flex flex-col gap-4">
+            <Link href="/" aria-label="Home">
+              <Logo className="h-8" fillOnHover />
+            </Link>
+            <p className="text-sm text-neutral-700">
+              © Phronema Labs {new Date().getFullYear()}
+            </p>
+          </div>
+          <div className="flex gap-6 text-sm text-neutral-700">
+            <Link href="/legal/privacy" className="transition hover:text-neutral-950">
+              Privacy Policy
+            </Link>
+            <Link href="/legal/terms" className="transition hover:text-neutral-950">
+              Terms of Service
+            </Link>
+            <Link href="/legal/cookies" className="transition hover:text-neutral-950">
+              Cookie Policy
+            </Link>
+          </div>
         </div>
       </FadeIn>
     </Container>

@@ -19,6 +19,9 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import easyAdSpendImage from '@/images/current-work/easy-ad-spend.png'
+import bigFuzzyImage from '@/images/current-work/big-fuzzy.png'
+import familyOfficeImage from '@/images/current-work/family-office.png'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -31,7 +34,14 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
-const offerings = ['Landing Pages', 'Logos', 'Bespoke Design']
+const offerings = [
+  'Retail & E-commerce',
+  'Professional Services',
+  'Healthcare & Wellness',
+  'Education & Training',
+  'Restaurants & Hospitality',
+  'Creative Studios',
+]
 
 function Clients() {
   return (
@@ -39,7 +49,7 @@ function Clients() {
       <Container>
         <FadeIn className="mx-auto flex flex-col gap-x-8 text-center sm:flex-row sm:items-center sm:justify-center">
           <h2 className="text-md font-display font-semibold tracking-wider text-white">
-            We’ve got you covered.
+            Industries We Serve
           </h2>
           <div className="h-px w-full bg-neutral-800 sm:w-auto sm:flex-auto" />
         </FadeIn>
@@ -52,11 +62,10 @@ function Clients() {
             {offerings.map((offering) => (
               <li
                 key={offering}
-                className="mx-auto border border-white p-2 transition-transform hover:scale-110"
+                className="mx-auto flex h-24 w-full items-center justify-center border border-white p-4 transition-transform hover:scale-110"
               >
-                {/* <Image src={logo} alt={client} unoptimized /> */}
-                <h3 className="text-sm font-semibold tracking-wider text-white">
-                  * {offering}
+                <h3 className="text-center text-sm font-semibold tracking-wider text-white sm:text-base">
+                  {offering}
                 </h3>
               </li>
             ))}
@@ -128,17 +137,11 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="From Insight to Impact."
+        title="Solutions for Growing Businesses"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We begin by diving deep into your goals and vision, gathering insights
-          that shape the foundation of the project. Through collaboration and
-          continuous refinement, we craft designs that not only meet your
-          expectations but elevate them, ensuring every detail works
-          harmoniously to bring your vision to life. Our process is rooted in
-          discovery, so that the final design isn&apos;t just a solution, but a
-          snapshot of a brand&apos;s journey.
+          We help small businesses grow by building custom web applications that solve real problems. From e-commerce to customer management, we create tools that make your business more efficient and profitable.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -152,70 +155,74 @@ function Services() {
               />
             </FadeIn>
           </div>
-          {/* <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+            <ListItem title="E-commerce Solutions">
+              Custom online stores and marketplaces that help you sell products and services directly to your customers.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Business Management Tools">
+              Custom dashboards and systems to manage inventory, appointments, and customer relationships.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Customer Portals">
+              Secure platforms for your customers to book services, track orders, and manage their accounts.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Automation Systems">
+              Tools that automate repetitive tasks, saving you time and reducing errors in your daily operations.
             </ListItem>
-          </List> */}
+          </List>
         </div>
       </Container>
     </>
   )
 }
 
-export const metadata = {
-  description:
-    'We are a development studio working at the intersection of design and technology.',
-}
-
-export default async function Home() {
-  let caseStudies = (await loadCaseStudies()).slice(0, 3)
-
+export default function Home({ caseStudies = [] }) {
   return (
     <>
-      <Container className="mt-42 pb-20 sm:pb-10 md:mt-56">
-        <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-neutral-950 sm:text-7xl">
-            In house design subscription service
+      <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <div className="max-w-3xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+            Boutique Application Development for Growing Businesses
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Rapid turnaround design. One rate, cancel anytime.
+            Phronema Labs is a boutique application development agency dedicated to helping small and medium-sized businesses grow through custom software solutions. We combine technical expertise with a deep understanding of business needs to create applications that drive real results.
           </p>
-        </FadeIn>
+        </div>
       </Container>
 
       <Clients />
-
-      {/* <CaseStudies caseStudies={caseStudies} /> */}
+      <div className="mt-24 sm:mt-32 lg:mt-40">
+        <Container>
+          <div className="text-center">
+            <h2 className="font-display text-3xl font-semibold text-neutral-950 [text-wrap:balance]">
+              View our work here
+            </h2>
+            <div className="mt-8 flex justify-center">
+              <Link
+                href="/work"
+                className="inline-flex items-center gap-x-2 rounded-full bg-neutral-950 px-6 py-3 text-base font-semibold text-white hover:bg-neutral-800"
+              >
+                Recent Projects
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </div>
       <Services />
-      {/* <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
-      >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
-      </Testimonial>
-
-
-
-      <ContactSection /> */}
+      
+      <ContactSection />
     </>
   )
 }

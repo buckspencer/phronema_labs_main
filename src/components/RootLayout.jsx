@@ -15,7 +15,6 @@ import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import Image from 'next/image'
-// import { Image } from 'next/image'
 import Link from 'next/link'
 import { Logo } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
@@ -107,13 +106,13 @@ function NavigationRow({ children }) {
 
 function NavigationItem({ href, children }) {
   return (
-    <Link
-      href={href}
+          <Link
+        href={href}
       className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
-    >
-      {children}
+      >
+        {children}
       <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
-    </Link>
+      </Link>
   )
 }
 
@@ -123,10 +122,6 @@ function Navigation() {
       <NavigationRow>
         <NavigationItem href="/work">Our Work</NavigationItem>
         <NavigationItem href="/about">About Us</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
       </NavigationRow>
     </nav>
   )
@@ -203,7 +198,7 @@ function RootLayoutInner({ children }) {
                 }}
               />
             </div>
-            {/* <Navigation /> */}
+            <Navigation />
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:grid-cols-2 sm:pt-16">
