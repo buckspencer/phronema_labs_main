@@ -6,19 +6,19 @@ import tucsonSkyline from '@/images/tucson-skyline.jpg'
 export const metadata = {
   title: 'About Us',
   description:
-    'We&apos;re a team of passionate developers dedicated to helping businesses grow through custom software solutions.',
+    'Phronema Labs is a one-person software development operation based in Tucson, AZ, dedicated to enriching the community through technology inspired by the American Southwest.',
 }
 
 export default function About() {
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About Phronema Labs" title="Rooted in Tucson, Inspired by the Southwest">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            We&apos;re a team of passionate developers dedicated to helping businesses grow through custom software solutions. Our deep love for the American Southwest and its communities drives our team to create software that not only solves problems but also enhances lives. Through this commitment, we take pride in working on projects that benefit communities and make a positive impact on people&apos;s daily experiences.
+            Operating from the scenic hills of Tucson, Arizona, Phronema Labs is a one-man creative development endeavor. Driven by a deep love for the American Southwest and a strong desire to contribute positively to the community, I focus on crafting software solutions that solve meaningful problems and genuinely enrich people's lives.
           </p>
           <p>
-            Our approach combines technical expertise with a deep understanding of business needs. We believe in building long-term relationships with our clients, working closely with them to understand their unique challenges and goals.
+            My approach combines technical skill with a dedication to understanding the unique challenges and aspirations of each project. I believe in building close partnerships, working directly with clients to turn their visions into reality.
           </p>
         </div>
       </PageIntro>

@@ -49,11 +49,16 @@ function DribbbleIcon(props) {
   )
 }
 
+function TwitterIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  )
+}
+
 export const socialMediaProfiles = [
-  { title: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
-  { title: 'Instagram', href: 'https://instagram.com', icon: InstagramIcon },
-  { title: 'GitHub', href: 'https://github.com', icon: GitHubIcon },
-  { title: 'Dribbble', href: 'https://dribbble.com', icon: DribbbleIcon },
+  { title: 'Twitter', href: 'https://x.com/phronema_labs', icon: TwitterIcon },
 ]
 
 export function SocialMedia({ className, invert = false }) {
@@ -71,6 +76,8 @@ export function SocialMedia({ className, invert = false }) {
           <Link
             href={socialMediaProfile.href}
             aria-label={socialMediaProfile.title}
+            target="_blank"
+            rel="noopener noreferrer"
             className={clsx(
               'transition',
               invert ? 'hover:text-neutral-200' : 'hover:text-neutral-700',
