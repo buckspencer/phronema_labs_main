@@ -55,12 +55,14 @@ function RecentWork() {
           {projects.map((project) => (
             <article key={project.id} className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
               <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl">
-                <Image
-                  src={project.image}
-                  alt={`${project.title} Preview`}
-                  className="object-cover"
-                  fill
-                />
+                <Link href={project.href} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} Preview`}
+                    className="object-cover"
+                    fill
+                  />
+                </Link>
               </div>
               <h3 className="mt-6 font-display text-xl font-semibold text-neutral-950">
                 <Link href={project.href} className="hover:text-neutral-600" target="_blank" rel="noopener noreferrer">
