@@ -64,7 +64,7 @@ function Header({
           <Logo isDark={invert} className="hidden sm:block" />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
+          <Button href="/contact" invert={invert} className="hidden sm:inline-flex">
             Contact us
           </Button>
           <button

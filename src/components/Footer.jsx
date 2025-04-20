@@ -128,7 +128,7 @@ export function Footer() {
               © Phronema Labs {new Date().getFullYear()}
             </p>
           </div>
-          <div className="flex gap-6 text-sm text-neutral-700">
+          <div className="flex justify-between gap-6 text-sm text-neutral-700 w-full sm:w-auto">
             <Link href="/legal/privacy" className="transition hover:text-neutral-950">
               Privacy Policy
             </Link>
