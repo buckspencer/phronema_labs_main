@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 d5c902f7ed274f0994ae933e984967797e2885e4 Buck Edward Spencer <ad3uck@gmail.com> 1738811330 -0700	commit (initial): first commit
+d5c902f7ed274f0994ae933e984967797e2885e4 d5c902f7ed274f0994ae933e984967797e2885e4 Buck Edward Spencer <ad3uck@gmail.com> 1738811330 -0700	Branch: renamed refs/heads/main to refs/heads/main
+d5c902f7ed274f0994ae933e984967797e2885e4 346f9d194061a4468738ab686d8bffdddf41c66e Buck Edward Spencer <ad3uck@gmail.com> 1738811368 -0700	commit: initial Commit
+346f9d194061a4468738ab686d8bffdddf41c66e 423192a8b465a712e48a6ceeca8fbb3b9098f643 Buck Edward Spencer <ad3uck@gmail.com> 1738944624 -0700	commit: Updates
+423192a8b465a712e48a6ceeca8fbb3b9098f643 346f9d194061a4468738ab686d8bffdddf41c66e Buck Edward Spencer <ad3uck@gmail.com> 1738944658 -0700	reset: moving to HEAD~
+346f9d194061a4468738ab686d8bffdddf41c66e c72528b77e3bb1d436da39b65ec24fbd56de384f Buck Edward Spencer <ad3uck@gmail.com> 1738944663 -0700	commit: Updates
+c72528b77e3bb1d436da39b65ec24fbd56de384f 5ed5fba140b11e14f77325ef9e338d56359039ef Buck Edward Spencer <ad3uck@gmail.com> 1739056320 -0700	commit: Add favicon
+5ed5fba140b11e14f77325ef9e338d56359039ef d14860090f488cedfd5bc1747cf1163999ad8860 Buck Edward Spencer <ad3uck@gmail.com> 1739062414 -0700	commit: Updates
+d14860090f488cedfd5bc1747cf1163999ad8860 5ed5fba140b11e14f77325ef9e338d56359039ef Buck Edward Spencer <ad3uck@gmail.com> 1739064040 -0700	reset: moving to HEAD~
+5ed5fba140b11e14f77325ef9e338d56359039ef 762b945f208c1b3718987196a800fee1bf0fc268 Buck Edward Spencer <ad3uck@gmail.com> 1739064043 -0700	commit: Updates
+762b945f208c1b3718987196a800fee1bf0fc268 5ed5fba140b11e14f77325ef9e338d56359039ef Buck Edward Spencer <ad3uck@gmail.com> 1739064127 -0700	reset: moving to HEAD~
+5ed5fba140b11e14f77325ef9e338d56359039ef 8e0804ce199c7e35737e5ee2d8f510158d8cc29c Buck Edward Spencer <ad3uck@gmail.com> 1739064135 -0700	commit: Updates
+8e0804ce199c7e35737e5ee2d8f510158d8cc29c 21290600fdaedc7c9ee229deaa252c7ba8ed90d5 Buck Edward Spencer <ad3uck@gmail.com> 1739207003 -0700	commit: Add favicon to public
+21290600fdaedc7c9ee229deaa252c7ba8ed90d5 8e0804ce199c7e35737e5ee2d8f510158d8cc29c Buck Edward Spencer <ad3uck@gmail.com> 1739207020 -0700	reset: moving to HEAD~
+8e0804ce199c7e35737e5ee2d8f510158d8cc29c 8b012a451c30db9eceb0ec6282ef4fb89ad24c02 Buck Edward Spencer <ad3uck@gmail.com> 1739207026 -0700	commit: Add favicon to public
+8b012a451c30db9eceb0ec6282ef4fb89ad24c02 b0f57ab3191f9e81a1cff398fbf109b697ba7c82 Buck Edward Spencer <ad3uck@gmail.com> 1739207312 -0700	commit: upadte to white favicon
+b0f57ab3191f9e81a1cff398fbf109b697ba7c82 90468f2a4d656b9dd68069ea78634f307e789d2b Buck Edward Spencer <ad3uck@gmail.com> 1739207849 -0700	commit: Updates corrupted fav
+90468f2a4d656b9dd68069ea78634f307e789d2b 947ff2670e6948c0b79494741c5169e5ac466042 Buck Edward Spencer <ad3uck@gmail.com> 1739914710 -0700	commit: Update offerings
+947ff2670e6948c0b79494741c5169e5ac466042 48971e2e9fbbc2e74badbefe5aeb98c16393467b Buck Edward Spencer <ad3uck@gmail.com> 1744149054 -0700	commit: Refactor middleware and update page content
+48971e2e9fbbc2e74badbefe5aeb98c16393467b e6efa2e17d02eefa555a8d7327b8a6f9d5701655 Buck Edward Spencer <ad3uck@gmail.com> 1744158411 -0700	commit: Update About and Contact pages with revised content and styling
+e6efa2e17d02eefa555a8d7327b8a6f9d5701655 1dd8c3741fcef0818e573fa28174e3caa4fe7132 Buck Edward Spencer <ad3uck@gmail.com> 1744158765 -0700	commit: Update About page content to improve clarity and readability
+1dd8c3741fcef0818e573fa28174e3caa4fe7132 aa004401a8717d0e3015322e053160783d841907 Buck Edward Spencer <ad3uck@gmail.com> 1745178924 -0700	commit: Enhance RecentWork component with link wrapping for project images
+aa004401a8717d0e3015322e053160783d841907 d2d380d901908ca568e2a2db0ab5e6247f954091 Buck Edward Spencer <ad3uck@gmail.com> 1745189109 -0700	commit: Add Inter font and update logo images
+d2d380d901908ca568e2a2db0ab5e6247f954091 55b5efbfd72f041b41321104e1a7088f393289c5 Buck Edward Spencer <ad3uck@gmail.com> 1745191781 -0700	commit: Update Footer, Logo, and RootLayout components for improved styling and layout
+55b5efbfd72f041b41321104e1a7088f393289c5 90aa9cf55db1e0d115be9e0b5e4e258c5588aaca Buck Edward Spencer <ad3uck@gmail.com> 1745195038 -0700	commit: Update Logo component to adjust width for improved responsiveness
