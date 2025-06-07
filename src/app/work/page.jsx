@@ -3,6 +3,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ContactSection } from '@/components/ContactSection'
+import tallmiImage from '@/images/current-work/tallmi.png'
 import easyAdSpendImage from '@/images/current-work/easy-ad-spend.png'
 import bigFuzzyImage from '@/images/current-work/big-fuzzy.png'
 import familyOfficeImage from '@/images/current-work/family-office.png'
@@ -17,20 +18,27 @@ function RecentWork() {
   const projects = [
     {
       id: 1,
-      title: "EasyAdSpend.com",
+      title: "Tallmi",
+      description: "An AI-powered platform that specializes in generating custom home interior and exterior upgrades and renovations, helping homeowners visualize and plan their dream spaces.",
+      image: tallmiImage,
+      href: "https://www.tallmi.com/",
+    },
+    {
+      id: 2,
+      title: "EasyAdSpend",
       description: "A comprehensive advertising spend management platform that helps businesses track, analyze, and optimize their marketing budgets in real-time.",
       image: easyAdSpendImage,
       href: "https://www.easyadspend.com/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Big Fuzzy",
       description: "A royal pet NFT generator where users can mint their own pet NFT on the ETH network.",
       image: bigFuzzyImage,
       href: "https://royal-pets-next.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Family Hub",
       description: "A secure and intuitive platform for families to manage subscription services, syncronize calendars, keep documents in a secure and central location, and more.",
       image: familyOfficeImage,
