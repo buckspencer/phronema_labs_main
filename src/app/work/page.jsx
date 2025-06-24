@@ -7,6 +7,7 @@ import tallmiImage from '@/images/current-work/tallmi.png'
 import easyAdSpendImage from '@/images/current-work/easy-ad-spend.png'
 import bigFuzzyImage from '@/images/current-work/big-fuzzy.png'
 import familyOfficeImage from '@/images/current-work/family-office.png'
+import quicksynqImage from '@/images/current-work/quicksynq.png'
 
 export const metadata = {
   title: 'Our Work',
@@ -43,6 +44,13 @@ function RecentWork() {
       description: "A secure and intuitive platform for families to manage subscription services, syncronize calendars, keep documents in a secure and central location, and more.",
       image: familyOfficeImage,
       href: "https://gilded-estate-guardian.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "Quicksynq",
+      description: "A project management tool designed for contractors and field teams, streamlining workflows, communication, and project tracking for the construction and service industries.",
+      image: quicksynqImage,
+      href: "https://www.quicksynq.com/",
     },
   ]
 
