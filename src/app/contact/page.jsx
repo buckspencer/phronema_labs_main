@@ -124,7 +124,7 @@ function ContactDetails() {
 export const metadata = {
   title: 'Contact Us',
   description:
-    'Let&apos;s discuss how we can help your business grow with custom software solutions.',
+    'Get in touch with Phronema Labs to discuss your custom software development needs. Based in Tucson, AZ, we help businesses across the US with application development, e-commerce solutions, and automation tools.',
 }
 
 export default function Contact() {

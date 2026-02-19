@@ -12,7 +12,7 @@ import quicksynqImage from '@/images/current-work/quicksynq.png'
 export const metadata = {
   title: 'Our Work',
   description:
-    'Take a look at our recent projects showcasing our ability to deliver high-quality solutions in record time.',
+    'View our portfolio of successful projects including Tallmi, EasyAdSpend, Big Fuzzy, Family Hub, and Quicksynq. Showcasing our ability to deliver high-quality custom software solutions in record time.',
 }
 
 function RecentWork() {

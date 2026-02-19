@@ -6,7 +6,7 @@ import tucsonSkyline from '@/images/tucson-skyline.jpg'
 export const metadata = {
   title: 'About Us',
   description:
-    'Phronema Labs is a one-person software development operation based in Tucson, AZ, dedicated to enriching the community through technology inspired by the American Southwest.',
+    'Learn about Phronema Labs, a boutique application development agency based in Tucson, AZ. We create custom software solutions that enrich communities through technology inspired by the American Southwest.',
 }
 
 export default function About() {

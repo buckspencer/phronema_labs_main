@@ -232,7 +232,7 @@ function Values() {
 export const metadata = {
   title: 'Our Process',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Learn about Phronema Labs\' development process. From discovery and planning to build and delivery, we follow a proven methodology to create custom software solutions that drive business growth.',
 }
 
 export default function Process() {
