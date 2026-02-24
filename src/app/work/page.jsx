@@ -7,11 +7,12 @@ import tallmiImage from '@/images/current-work/tallmi.png'
 import bigFuzzyImage from '@/images/current-work/big-fuzzy.png'
 import familyOfficeImage from '@/images/current-work/family-office.png'
 import quicksynqImage from '@/images/current-work/quicksynq.png'
+import ageOfLearningImage from '@/images/current-work/ageoflearning.png'
 
 export const metadata = {
   title: 'Our Work',
   description:
-    'View our portfolio of successful projects including Tallmi, Big Fuzzy, Family Hub, and Quicksynq. Showcasing our ability to deliver high-quality custom software solutions in record time.',
+    'View our portfolio of successful projects including Tallmi, Age of Learning, Big Fuzzy, Family Hub, and Quicksynq. Showcasing our ability to deliver high-quality custom software solutions in record time.',
 }
 
 function RecentWork() {
@@ -22,6 +23,13 @@ function RecentWork() {
       description: "An AI-powered platform that specializes in generating custom home interior and exterior upgrades and renovations, helping homeowners visualize and plan their dream spaces.",
       image: tallmiImage,
       href: "https://www.tallmi.com/",
+    },
+    {
+      id: 2,
+      title: "Age of Learning",
+      description: "An innovative educational technology company that creates digital learning experiences for children, featuring award-winning programs like ABCmouse and Adventure Academy.",
+      image: ageOfLearningImage,
+      href: "https://www.ageoflearning.com/",
     },
     {
       id: 3,
