@@ -19,7 +19,6 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import easyAdSpendImage from '@/images/current-work/easy-ad-spend.png'
 import bigFuzzyImage from '@/images/current-work/big-fuzzy.png'
 import familyOfficeImage from '@/images/current-work/family-office.png'
 

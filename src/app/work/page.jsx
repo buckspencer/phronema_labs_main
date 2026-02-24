@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ContactSection } from '@/components/ContactSection'
 import tallmiImage from '@/images/current-work/tallmi.png'
-import easyAdSpendImage from '@/images/current-work/easy-ad-spend.png'
 import bigFuzzyImage from '@/images/current-work/big-fuzzy.png'
 import familyOfficeImage from '@/images/current-work/family-office.png'
 import quicksynqImage from '@/images/current-work/quicksynq.png'
@@ -12,7 +11,7 @@ import quicksynqImage from '@/images/current-work/quicksynq.png'
 export const metadata = {
   title: 'Our Work',
   description:
-    'View our portfolio of successful projects including Tallmi, EasyAdSpend, Big Fuzzy, Family Hub, and Quicksynq. Showcasing our ability to deliver high-quality custom software solutions in record time.',
+    'View our portfolio of successful projects including Tallmi, Big Fuzzy, Family Hub, and Quicksynq. Showcasing our ability to deliver high-quality custom software solutions in record time.',
 }
 
 function RecentWork() {
@@ -23,13 +22,6 @@ function RecentWork() {
       description: "An AI-powered platform that specializes in generating custom home interior and exterior upgrades and renovations, helping homeowners visualize and plan their dream spaces.",
       image: tallmiImage,
       href: "https://www.tallmi.com/",
-    },
-    {
-      id: 2,
-      title: "EasyAdSpend",
-      description: "A comprehensive advertising spend management platform that helps businesses track, analyze, and optimize their marketing budgets in real-time.",
-      image: easyAdSpendImage,
-      href: "https://www.easyadspend.com/",
     },
     {
       id: 3,
